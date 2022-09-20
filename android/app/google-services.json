@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "666484420180",
+    "project_id": "whatsapp-backend-dazai",
+    "storage_bucket": "whatsapp-backend-dazai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666484420180:android:be9f3702ed6efa2adc07c1",
+        "android_client_info": {
+          "package_name": "com.dazai.whatsapp_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666484420180-ap1gu31he6v1bfu6523ofiad5d6dg48v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmHXAtPemJv2CIVTBYfylZVVbi9h5SY6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666484420180-ap1gu31he6v1bfu6523ofiad5d6dg48v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
