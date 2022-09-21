@@ -1,8 +1,14 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:whatsapp_clone/common/utils/utils.dart';
 import 'package:whatsapp_clone/features/auth/screens/otp_screen.dart';
+
+final authRepositoryProvider = Provider((ref) => AuthRepository(
+      auth: FirebaseAuth.instance,
+      firestore: FirebaseFirestore.instance,
+    ));
 
 class AuthRepository {
   final FirebaseAuth auth;
@@ -21,7 +27,8 @@ class AuthRepository {
           throw Exception(e.message);
         },
         codeSent: (String verificationId, int? resendToken) async {
-          Navigator.pushNamed(context, OTPScreen.routeName, arguments: verificationId);
+          Navigator.pushNamed(context, OTPScreen.routeName,
+              arguments: verificationId);
         },
         codeAutoRetrievalTimeout: (String verificationId) {},
       );
